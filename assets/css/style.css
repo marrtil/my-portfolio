@@ -321,11 +321,17 @@ h6 {
 
 .aboutIcon {
   background-color: orange;
-  border-radius: 60%;
-  padding: 10%;
   text-align: center;
-  width: 30%;
+  border-radius: 50%;
+  width: 15%;
   height: 30%;
+}
+
+.slash {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="100%" x2="100%" y2="0" stroke="gray" /></svg>');
+}
+.backslash {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="100%" y2="100%" stroke="gray" /></svg>');
 }
 
 /*--------------------------------------------------------------
@@ -378,15 +384,12 @@ section {
   color: black;
 }
 
-.about .content ul {
-  list-style: none;
-  padding: 0;
+.about .row {
+  margin-left: 150px;
 }
 
-.about .content ul li {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
+.about .content {
+  margin-left: 100px;
 }
 
 .about .content ul strong {
@@ -400,8 +403,31 @@ section {
   line-height: 0;
 }
 
-.about .content p:last-child {
-  margin-bottom: 0;
+.section-title {
+  text-align: center;
+}
+
+.about ol {
+  position: relative;
+  left: 500px;
+  list-style-type: none;
+  float: right;
+}
+
+.about ol li {
+  width: 1vw;
+  height: 2vh;
+  text-indent: -9999px;
+  border-radius: 80%;
+  overflow: hidden;
+  float: left;
+  margin-right: 5px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.paging:hover {
+  cursor: pointer;
 }
 
 /*--------------------------------------------------------------

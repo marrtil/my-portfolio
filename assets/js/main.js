@@ -37,6 +37,46 @@
     }
   };
 
+  const icons = [
+    `<i class="fa-sharp fa-solid fa-book fa-4x" style="color:white" ></i>`,
+  ];
+
+  const images = [
+    `<a
+  href="assets/img/study.png"
+  class="portfolio-lightbox"
+  ><img src="./assets/img/study.png" width="300" height="200"/></a>
+  <a
+  href="assets/img/study.png"
+  class="portfolio-lightbox"
+  ><img src="./assets/img/studyMemo.png" width="300" height="200"/></a>`,
+  ];
+
+  const contents = [
+    `<h3>항상 더 배우려는 자세</h3>
+  <p>부족한 html,css 지식과 여러 프레임워크들을 강의를 보고,직접 사용해보고 친구들과 함께
+    스터디를 하여 서로 부족한 부분을 채워주며 공부했습니다.
+  </p>`,
+  ];
+
+  console.log(document.querySelectorAll(".paging"));
+
+  on(
+    "click",
+    ".paging",
+    function (e) {
+      const pageNum = e.target.value;
+      select(".aboutIcon", false).innerHTML = icons[pageNum];
+      document.querySelectorAll(".paging").forEach((value) => {
+        value.style.backgroundColor = "white";
+      });
+      e.target.style.backgroundColor = "black";
+      select(".content", false).innerHTML = contents[pageNum];
+      select(".imageBox", false).innerHTML = images[pageNum];
+    },
+    true
+  );
+
   /**
    * Easy on scroll event listener
    */
@@ -66,7 +106,6 @@
   };
   window.addEventListener("load", navbarlinksActive);
   onscroll(document, navbarlinksActive);
-  console.log(document);
 
   /**
    * Scrolls to an element with header offset
