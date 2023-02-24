@@ -21,8 +21,6 @@
   };
   // 대상이 여러개(true)면 쿼리셀렉터all로 배열만들어 or false면 그냥 쿼리셀렉터로 하나만
 
-  console.log(select(".aboutIcon", false).innerHTML);
-
   /**
    * Easy event listener function
    */
@@ -39,6 +37,7 @@
 
   const icons = [
     `<i class="fa-sharp fa-solid fa-book fa-4x" style="color:white" ></i>`,
+    `<i class="fa-sharp fa-solid fa-book fa-4x" style="color:white" ></i>`,
   ];
 
   const images = [
@@ -50,29 +49,83 @@
   href="assets/img/study.png"
   class="portfolio-lightbox"
   ><img src="./assets/img/studyMemo.png" width="300" height="200"/></a>`,
+    `<a
+  href="assets/img/grass.png"
+  class="portfolio-lightbox"
+  ><img src="./assets/img/grass.png" width="300" height="200"/></a>
+  <a
+  href="assets/img/bodyProfile.jpeg"
+  class="portfolio-lightbox"
+  ><img src="./assets/img/bodyProfile.jpeg" width="300" height="200"/></a>`,
+    `<a
+  href="assets/img/kakaotalk.webp"
+  class="portfolio-lightbox"
+  ><img src="./assets/img/kakaotalk.webp" width="150" height="150" class="messenger" id="kakao"/></a>
+  <a
+  href="assets/img/discord.png"
+  class="portfolio-lightbox"
+  ><img src="./assets/img/discord.png" width="150" height="150" class="messenger" id="dis"/></a>
+  <a
+  href="assets/img/slack.png"
+  class="portfolio-lightbox"
+  ><img src="./assets/img/slack.png" width="150" height="150" class="messenger" id="slack"/></a>`,
   ];
 
   const contents = [
-    `<h3>항상 더 배우려는 자세</h3>
-  <p>부족한 html,css 지식과 여러 프레임워크들을 강의를 보고,직접 사용해보고 친구들과 함께
+    `<h3>항상 더 배우려는 자세</h3><br>
+  <p>부족한 html,css 지식과 여러 프레임워크들을 강의를 보고,직접 사용해보며 친구들과 함께
     스터디를 하여 서로 부족한 부분을 채워주며 공부했습니다.
+  </p>`,
+    `<h3>꾸준한 노력과 자기개발</h3><br>
+  <p>
+    매일 공부하며 1커밋 이상하기 위해 노력하며 취미 생활로 운동또한 병행하며 결과물을 남겼습니다
+  </p>`,
+    `<h3>커뮤니케이션</h3><br>
+  <p>
+    혼자서 궁금해하기보단 여러 메신저를 통해 친구나 다른 직업 종사자 분들과 소통하며 개발을 하는편입니다. 
   </p>`,
   ];
 
   console.log(document.querySelectorAll(".paging"));
 
+  var pageNum = 0;
+  const pageFunction = (num) => {
+    console.log(num);
+    document.querySelectorAll(".paging").forEach((value) => {
+      value.style.backgroundColor = "white";
+    });
+    select(".paging", true)[num].style.backgroundColor = "black";
+    select(".content", false).innerHTML = contents[num];
+    select(".imageBox", false).innerHTML = images[num];
+    GLightbox({
+      selector: ".portfolio-lightbox",
+    });
+  };
+
+  pageFunction(pageNum);
+
+  console.log(contents.length);
+
+  console.log(select(".arrow", true)[0].getAttribute("value"));
+  const arrowFunction = (e) => {
+    const oper = e.target.getAttribute("value");
+    if (oper == "+") {
+      if (pageNum == contents.length - 1) {
+        pageNum = 0;
+      } else pageNum += 1;
+    } else {
+      if (pageNum == 0) pageNum = contents.length - 1;
+      else pageNum -= 1;
+    }
+    pageFunction(pageNum);
+  };
+  on("click", ".arrow", arrowFunction, true);
   on(
     "click",
     ".paging",
     function (e) {
-      const pageNum = e.target.value;
-      select(".aboutIcon", false).innerHTML = icons[pageNum];
-      document.querySelectorAll(".paging").forEach((value) => {
-        value.style.backgroundColor = "white";
-      });
-      e.target.style.backgroundColor = "black";
-      select(".content", false).innerHTML = contents[pageNum];
-      select(".imageBox", false).innerHTML = images[pageNum];
+      pageNum = e.target.value;
+      pageFunction(pageNum);
     },
     true
   );

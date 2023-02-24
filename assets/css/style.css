@@ -319,14 +319,6 @@ h6 {
   }
 }
 
-.aboutIcon {
-  background-color: orange;
-  text-align: center;
-  border-radius: 50%;
-  width: 15%;
-  height: 30%;
-}
-
 .slash {
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="100%" x2="100%" y2="0" stroke="gray" /></svg>');
 }
@@ -342,12 +334,12 @@ section {
   overflow: hidden;
 }
 
-.section-bg {
-  background: #f5f8fd;
-}
-
 .section-title {
   padding-bottom: 30px;
+}
+
+.section-title p {
+  font-size: 20px;
 }
 
 .section-title h3 {
@@ -378,18 +370,16 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .content h3 {
-  font-weight: 700;
-  font-size: 26px;
+  font-weight: 800;
+  font-size: 36px;
   font-family: "Poor Story", cursive;
   color: black;
 }
 
-.about .row {
-  margin-left: 150px;
-}
-
 .about .content {
-  margin-left: 100px;
+  margin-left: 50px;
+  height: 450px;
+  font-size: 20px;
 }
 
 .about .content ul strong {
@@ -426,8 +416,42 @@ section {
   border: 1px solid black;
 }
 
+.aboutIcon {
+  background-color: orange;
+  text-align: center;
+  border-radius: 50%;
+}
+
 .paging:hover {
   cursor: pointer;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.arrow {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.messenger {
+  border-radius: 80%;
+  position: relative;
+  display: inline-block;
+}
+
+#kakao {
+  z-index: 1;
+  bottom: 50px;
+  left: 50px;
+}
+
+#slack {
+  z-index: -1;
+  bottom: 80px;
+  left: 80px;
 }
 
 /*--------------------------------------------------------------
@@ -484,38 +508,26 @@ section {
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+
+.skills .skillBox {
+  text-align: center;
 }
 
-.skills .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #050d18;
+.skillHelper {
+  vertical-align: top;
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+.skills .skillBox .skill {
+  border: 2px solid orange;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+  height: 300px;
+  padding-top: 10px;
 }
 
-.skills .progress-bar-wrap {
-  background: #dce8f8;
-  height: 10px;
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #149ddd;
+.skill hr {
+  border: 1px solid orange;
 }
 
 /*--------------------------------------------------------------
