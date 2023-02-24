@@ -94,7 +94,7 @@
     document.querySelectorAll(".paging").forEach((value) => {
       value.style.backgroundColor = "white";
     });
-    select(".paging", true)[num].style.backgroundColor = "black";
+    select(".paging", true)[num].style.backgroundColor = "orange";
     select(".content", false).innerHTML = contents[num];
     select(".imageBox", false).innerHTML = images[num];
     GLightbox({

@@ -42,7 +42,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #149ddd;
+  background: orange;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -56,7 +56,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2eafec;
+  background: rgb(220, 110, 0);
   color: #fff;
 }
 
@@ -342,8 +342,7 @@ section {
   font-size: 20px;
 }
 
-.section-title h3 {
-  font-size: 32px;
+.section-title h1 {
   font-weight: bold;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -351,15 +350,14 @@ section {
   font-family: "Poor Story", cursive;
 }
 
-.section-title h2::after {
+.section-title h1::after {
   content: "";
-  position: absolute;
+  position: relative;
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
-  bottom: 0;
-  left: 0;
+  background: orange;
+  left: 530px;
 }
 
 .section-title p {
@@ -413,7 +411,7 @@ section {
   float: left;
   margin-right: 5px;
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid orange;
 }
 
 .aboutIcon {
@@ -434,6 +432,7 @@ section {
 .arrow {
   vertical-align: middle;
   cursor: pointer;
+  color: orange;
 }
 
 .messenger {
@@ -531,64 +530,42 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Resume
+# education
 --------------------------------------------------------------*/
-.resume .resume-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-top: 20px;
+
+.edu-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.education .edu-title h2 {
+  font-weight: bold;
+}
+
+.edu-title p {
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.education {
+  width: 74%;
+  margin-left: 100px;
+  margin-bottom: 100px;
+}
+
+.education hr {
+  margin-top: 0px;
+}
+
+.edu-contents ul li::marker {
+  color: orange;
+  font-size: 35px;
+}
+
+.edu-contents ul li {
+  font-size: 20px;
   margin-bottom: 20px;
-  color: #050d18;
-}
-
-.resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid #1f5297;
-  position: relative;
-}
-
-.resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #050d18;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item h5 {
-  font-size: 16px;
-  background: #e4edf9;
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item ul {
-  padding-left: 20px;
-}
-
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-
-.resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #fff;
-  border: 2px solid #1f5297;
 }
 
 /*--------------------------------------------------------------
