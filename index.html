@@ -170,7 +170,7 @@
               직접 공부하고 프로젝트들을 진행하며 사용해본 언어와 툴들입니다
             </p>
           </div>
-          <div class="skillBox">
+          <div class="skillBox" data-aos="fade-up">
             <div class="skillHelper"></div>
           <div class="col-lg-2 skill">
               Language
@@ -237,8 +237,8 @@
           <div class="section-title">
             <h1>Education</h1>
           </div>
-          <div class="educations">
-            <div class="education">
+          <div class="educations" >
+            <div class="education" data-aos="fade-right">
               <div class="edu-title"><h2>청운대학교</h2><p>-2016.02~2022.02</p></div>
               <hr>
               <div class="edu-contents">
@@ -252,7 +252,7 @@
                 </ul>
               </div>
             </div>
-            <div class="education">
+            <div class="education" data-aos="fade-left">
               <div class="edu-title"><h2>자바풀스택&빅데이터 AI융합 개발자 양성과정</h2><p>-2021.12~2022.06</p></div>
               <hr>
               <div class="edu-contents">
@@ -289,19 +289,136 @@
       <section id="project" class="portfolio section-bg">
         <div class="container">
           <div class="section-title">
-            <h2>Project</h2>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
+            <h1>Project</h1>
           </div>
 
-          <div class="row" data-aos="fade-up">
-            
-            
-          </div>
+            <div class="projects" data-aos="fade-right">
+              <div class="project">
+                <p class="proType">팀 프로젝트</p>
+                <img src="./assets/img/프로젝트1.png"/>
+                <div class="proContent">
+                  <h3>학교 홈페이지 개발</h3>
+                  <p>개발기간 : <strong>[2022.03.22~4.13]</strong> - 약 3주</p>
+                  <a href="https://github.com/YH803118/20220322_teamA_first_project">깃허브 링크</a>
+                  <ul>
+                    <li>
+                    Eclipse,Spring, oracle, tomcat을 활용하여 학교 홈페이지 구현
+                    </li>
+                    <li>
+                      로그인,회원가입,회원정보 수정등의 회원기능 , 교수/학생 계정의 구분과 그에따른 과목개설/수강신청 기능 구현
+                    </li>
+                    <li>
+                    과목마다의 전용 페이지 - 교수계정의 파일첨부가 가능한 게시물과 학생의 질문기능과 학생전용 커뮤니티 게시판
+                    </li>
+                    <li>
+                    사용기술 : html, css, javascript, spring, MyBatis, JDBC-oracle,SQL,Apache Tomcat
+                    </li>
+                  </ul>
+                </div>
+            </div>
+                <div class="project">
+                  <p class="proType">팀 프로젝트</p>
+                  <img src="./assets/img/프로젝트2.png"/>
+                  <div class="proContent">
+                  <h3>빅데이터 기반 감정에 따른 음악 추천(CAT)</h3>
+                  <p>개발기간 : <strong>[2022.05.21~6.21]</strong> - 1개월</p>
+                  <a href="https://github.com/YH803118/CAT">깃허브 링크</a><br>
+                  <a href="https://cat-music.kro.kr/">배포 사이트</a>
+                  <ul>
+                    <li>
+                      Django,VsCode,bootstrap 틀을 이용한 css를 활용하여 개발
+                    </li>
+                    <li>
+                    멜론 사이트에서 크롤링을 이용한 노래가사 수집
+                    </li>
+                    <li>
+                    딥러닝을 통한 가사의 감정분석,6가지감정에 점수를 매기고 사용자의 감정선택에도 점수를매겨 서로 비슷한 감정 점수의 음악을 추천
+                    </li>
+                    <li>
+                    AWS를 통해 배포
+                    </li>
+                    <li>
+                      사용기술 : html, css, javascript,jquery,python ,aws, django, uwsgi, nginx, mysql,bootstrap
+                    </li>
+                  </ul>
+                  </div>
+                </div>
+                  <div class="project">
+                    <p class="proType">개인 프로젝트</p>
+                    <img src="./assets/img/프로젝트3.png"/>
+                    <div class="proContent">
+                    <h3>미니게임 카드 뒤집기</h3>
+                    <p>개발기간 : <strong>[2022.9.24~10.1]</strong> - 1주</p>
+                    <a href="https://github.com/marrtil/minigame">깃허브 링크</a><br>
+                    <a href="https://marrtil.github.io/">깃허브 배포 링크</a>
+                    <ul>
+                      <li>
+                      리액트에 대한 공부를 하며 기능을 체험해보기 위해 진행
+                      </li>
+                      <li>
+                      리액트 기능을 사용하긴 했지만 jsx보단 순수 자바스크립트에 의존한 구현
+                      </li>
+                      <li>
+                      사용기술 :React, jsx, css, javascript, github
+                      </li>
+                    </ul>
+                    </div>
+                  </div>
+                    <div class="project">
+                      <p class="proType">팀 프로젝트</p>
+                      <img src="./assets/img/프로젝트4.png"/>
+                      <div class="proContent">
+                      <h3>스터디 구인 사이트(oziStudy)</h3>
+                      <p>개발기간 : <strong>[2022.11.15~12.11]</strong> - 약 4주</p>
+                      <a href="https://github.com/YH803118/oziStudy">깃허브 링크</a><br>
+                      <a href="https://ozitest.herokuapp.com/">배포 사이트</a>
+                      <ul>
+                        <li>
+                        React,node.js+express를 이용하여 개발
+                        </li>
+                        <li>
+                        로그인,회원가입,정보수정에서 프로필사진 관리 기능
+                        </li>
+                        <li>
+                        스터디 개설시 스터디 목적에맞는 해시태그,스터디 검색기능과 댓글기능
+                        </li>
+                        <li>
+                          Heroku를 통해 배포
+                        </li>
+                        <li>
+                        사용기술 : html, css, javascript, React, nodejs, express, heroku, mysql                        
+                        </li>
+                      </ul>
+                      </div>
+                    </div>
+                      <div class="project">
+                        <p class="proType">팀 프로젝트</p>
+                        <img src="./assets/img/프로젝트5.png"/>
+                        <div class="proContent">
+                        <h3>쇼핑몰(TShopping)</h3>
+                        <p>개발기간 : <strong>[2022.03.22~4.13]</strong> - 3주</p>
+                        <a href="https://github.com/marrtil/TShopping">깃허브 링크</a><br>
+                        <a href="https://tshopping-app.herokuapp.com/">배포 사이트</a>
+                        <ul>
+                          <li>
+                          React+TypeScript+webpack,node.js+express로 구현
+                          </li>
+                          <li>
+                            배너,상품분류,장바구니,결제페이지 구현
+                          </li>
+                          <li>
+                            Passport를 통한 로그인 관리
+                          </li>
+                          <li>
+                            Heroku를 통해 배포
+                          </li>
+                          <li>
+                            사용기술 : html, css, javascript, Typescript, React, webpack, nodejs, express, heroku, mysql
+                          </li>
+                        </ul>
+                        </div>
+                      </div>
+          
         </div>
       </section>
       <!-- End Portfolio Section -->
@@ -321,7 +438,7 @@
           </div>
 
           <div class="row" data-aos="fade-in">
-            <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="col-lg-7 d-flex align-items-stretch">
               <div class="info">
                 <div class="address">
                   <i class="bi bi-geo-alt"></i>
@@ -341,12 +458,7 @@
                   <p>+1 5589 55488 55s</p>
                 </div>
 
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                  frameborder="0"
-                  style="border: 0; width: 100%; height: 290px"
-                  allowfullscreen
-                ></iframe>
+               
               </div>
             </div>
 
