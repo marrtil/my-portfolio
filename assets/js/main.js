@@ -35,11 +35,6 @@
     }
   };
 
-  const icons = [
-    `<i class="fa-sharp fa-solid fa-book fa-4x" style="color:white" ></i>`,
-    `<i class="fa-sharp fa-solid fa-book fa-4x" style="color:white" ></i>`,
-  ];
-
   const images = [
     `<a
   href="assets/img/study.png"
