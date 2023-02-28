@@ -42,6 +42,7 @@ h6 {
   height: 40px;
   border-radius: 50px;
   transition: all 0.4s;
+  text-decoration: none;
 }
 
 .back-to-top i {
@@ -295,9 +296,13 @@ h6 {
   border-bottom: 3px solid #149ddd;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 500px) {
   #hero {
     background-attachment: fixed;
+  }
+
+  #hero .hero-container {
+    margin-left: 0px;
   }
 }
 
@@ -351,6 +356,13 @@ section {
   left: 480px;
 }
 
+@media (max-width: 500px) {
+  .section-title h1::after {
+    left: 165px;
+    width: 45px;
+  }
+}
+
 .section-title p {
   margin-bottom: 0;
 }
@@ -361,6 +373,11 @@ section {
 
 .about .row {
   margin-left: 50px;
+}
+@media (max-width: 500px) {
+  .about .row {
+    margin-left: 0px;
+  }
 }
 .about .content h3 {
   font-weight: 800;
@@ -450,55 +467,30 @@ section {
   left: 80px;
 }
 
-/*--------------------------------------------------------------
-# Facts
---------------------------------------------------------------*/
-.facts {
-  padding-bottom: 30px;
-}
+@media (max-width: 500px) {
+  .arrowField {
+    display: block;
+  }
+  .boxImage {
+    width: 45vw;
+  }
 
-.facts .count-box {
-  padding: 30px;
-  width: 100%;
-}
-
-.facts .count-box i {
-  display: block;
-  font-size: 44px;
-  color: #149ddd;
-  float: left;
-  line-height: 0;
-}
-
-.facts .count-box span {
-  font-size: 48px;
-  line-height: 40px;
-  display: block;
-  font-weight: 700;
-  color: #050d18;
-  margin-left: 60px;
-}
-
-.facts .count-box p {
-  padding: 15px 0 0 0;
-  margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #122f57;
-}
-
-.facts .count-box a {
-  font-weight: 600;
-  display: block;
-  margin-top: 20px;
-  color: #122f57;
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  transition: ease-in-out 0.3s;
-}
-
-.facts .count-box a:hover {
-  color: #1f5297;
+  .about .content {
+    margin-left: 0px;
+    font-size: 1em;
+    height: 150px;
+  }
+  .about .content h3 {
+    font-size: 1.5em;
+  }
+  .messenger {
+    width: 100px;
+    height: 100px;
+  }
+  #slack {
+    left: -90px;
+    bottom: 70px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -517,13 +509,20 @@ section {
   border: 2px solid orange;
   display: inline-block;
   vertical-align: top;
-  font-size: 20px;
+  font-size: 18px;
   height: 300px;
   padding-top: 10px;
 }
 
 .skill hr {
   border: 1px solid orange;
+}
+
+@media (max-width: 500px) {
+  .skill {
+    width: 18%;
+    overflow: hidden;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -551,6 +550,12 @@ section {
   margin-bottom: 100px;
 }
 
+@media (max-width: 500px) {
+  .education {
+    margin-left: 0px;
+  }
+}
+
 .education hr {
   margin-top: 0px;
 }
@@ -576,6 +581,7 @@ section {
 .projects {
   margin-left: 150px;
 }
+
 .project {
   margin-bottom: 100px;
 }
@@ -588,6 +594,15 @@ section {
 .project img {
   width: 40%;
   height: 200px;
+}
+
+@media (max-width: 500px) {
+  .projects {
+    margin-left: 0px;
+  }
+  .project img {
+    width: 60vw;
+  }
 }
 
 .proContent {
@@ -685,6 +700,12 @@ section {
   margin-left: 150px;
   display: flex;
   flex-direction: row;
+}
+
+@media (max-width: 500px) {
+  .contact .row {
+    margin-left: 0px;
+  }
 }
 
 .contact .info {

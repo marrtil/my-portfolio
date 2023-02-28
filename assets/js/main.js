@@ -39,19 +39,19 @@
     `<a
   href="assets/img/study.png"
   class="portfolio-lightbox"
-  ><img src="./assets/img/study.png" width="300" height="200"/></a>
+  ><img src="./assets/img/study.png" class="boxImage" width="300" height="200"/></a>
   <a
   href="assets/img/study.png"
   class="portfolio-lightbox"
-  ><img src="./assets/img/studyMemo.png" width="300" height="200"/></a>`,
+  ><img src="./assets/img/studyMemo.png" class="boxImage" width="300" height="200"/></a>`,
     `<a
   href="assets/img/grass.png"
   class="portfolio-lightbox"
-  ><img src="./assets/img/grass.png" width="300" height="200"/></a>
+  ><img src="./assets/img/grass.png" class="boxImage" width="300" height="200"/></a>
   <a
   href="assets/img/bodyProfile.jpeg"
   class="portfolio-lightbox"
-  ><img src="./assets/img/bodyProfile.jpeg" width="300" height="200"/></a>`,
+  ><img src="./assets/img/bodyProfile.jpeg" class="boxImage" width="300" height="200"/></a>`,
     `<a
   href="assets/img/kakaotalk.webp"
   class="portfolio-lightbox"
@@ -63,7 +63,7 @@
   <a
   href="assets/img/slack.png"
   class="portfolio-lightbox"
-  ><img src="./assets/img/slack.png" width="150" height="150" class="messenger" id="slack"/></a>`,
+  ><img src="./assets/img/slack.png"  width="150" height="150" class="messenger" id="slack"/></a>`,
   ];
 
   const contents = [
@@ -81,11 +81,8 @@
   </p>`,
   ];
 
-  console.log(document.querySelectorAll(".paging"));
-
   var pageNum = 0;
   const pageFunction = (num) => {
-    console.log(num);
     document.querySelectorAll(".paging").forEach((value) => {
       value.style.backgroundColor = "white";
     });
@@ -99,9 +96,6 @@
 
   pageFunction(pageNum);
 
-  console.log(contents.length);
-
-  console.log(select(".arrow", true)[0].getAttribute("value"));
   const arrowFunction = (e) => {
     const oper = e.target.getAttribute("value");
     if (oper == "+") {
