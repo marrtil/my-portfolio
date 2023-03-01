@@ -372,7 +372,7 @@ section {
 
 @media (max-width: 400px) {
   .section-title h1::after {
-    left: 120px;
+    left: 100px;
     width: 45px;
   }
 }
