@@ -363,6 +363,20 @@ section {
   }
 }
 
+@media (max-width: 500px) {
+  .section-title h1::after {
+    left: 165px;
+    width: 45px;
+  }
+}
+
+@media (max-width: 400px) {
+  .section-title h1::after {
+    left: 145px;
+    width: 45px;
+  }
+}
+
 .section-title p {
   margin-bottom: 0;
 }
