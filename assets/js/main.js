@@ -39,19 +39,19 @@
     `<a
   href="assets/img/study.png"
   class="portfolio-lightbox"
-  ><img src="./assets/img/study.png" class="boxImage" width="300" height="200"/></a>
+  ><img src="./assets/img/study.png" class="boxImage" width="300" height="250"/></a>
   <a
   href="assets/img/study.png"
   class="portfolio-lightbox"
-  ><img src="./assets/img/studyMemo.png" class="boxImage" width="300" height="200"/></a>`,
+  ><img src="./assets/img/studyMemo.png" class="boxImage" width="350" height="250"/></a>`,
     `<a
   href="assets/img/grass.png"
   class="portfolio-lightbox"
-  ><img src="./assets/img/grass.png" class="boxImage" width="300" height="200"/></a>
+  ><img src="./assets/img/grass.png" class="boxImage" width="300" height="250"/></a>
   <a
   href="assets/img/bodyProfile.jpeg"
   class="portfolio-lightbox"
-  ><img src="./assets/img/bodyProfile.jpeg" class="boxImage" width="300" height="200"/></a>`,
+  ><img src="./assets/img/bodyProfile.jpeg" class="boxImage" width="300" height="250"/></a>`,
     `<a
   href="assets/img/kakaotalk.webp"
   class="portfolio-lightbox"
