@@ -41,7 +41,7 @@
   class="portfolio-lightbox"
   ><img src="./assets/img/study.png" class="boxImage" width="300" height="250"/></a>
   <a
-  href="assets/img/study.png"
+  href="assets/img/studyMemo.png"
   class="portfolio-lightbox"
   ><img src="./assets/img/studyMemo.png" class="boxImage" width="350" height="250"/></a>`,
     `<a
